@@ -1,5 +1,5 @@
 data "google_compute_zones" "available" {
-  region = "${local.merged_settings["region_name"]}"
+  region = "us-central1"
   status = "UP"
 }
 
