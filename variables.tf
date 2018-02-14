@@ -1,5 +1,7 @@
 variable "settings" {
-  default = {}
+  default = {
+    region_name = "us-central1"  
+  }
 }
 
 locals {
