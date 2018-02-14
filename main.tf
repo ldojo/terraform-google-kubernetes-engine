@@ -12,7 +12,7 @@ resource "google_container_cluster" "cluster" {
     ignore_changes = ["node_pool"]
   }
 
-  name = "${local.merged_settings["cluster_name"]}"
+  name = "us-central1"
   zone = "${data.google_compute_zones.available.names[0]}"
 
   additional_zones = ["${local.additional_zone_names}"]
